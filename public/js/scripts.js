@@ -1,4 +1,3 @@
-// Fungsi untuk verifikasi kode akses
 async function verifyAccess() {
   const accessCode = document.getElementById('access-code').value;
 
@@ -25,7 +24,6 @@ async function verifyAccess() {
   }
 }
 
-// Fungsi untuk enable input form setelah verifikasi berhasil
 function enableForm() {
   document.getElementById('token').disabled = false;
   document.getElementById('channelId').disabled = false;
