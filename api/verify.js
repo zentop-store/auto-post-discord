@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 
 // Ambil URL dan kunci dari variabel lingkungan
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY;
+const supabaseKey = process.env.SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default async function handler(req, res) {
